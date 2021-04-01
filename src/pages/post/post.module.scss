@@ -1,1 +1,59 @@
-// TODO
+.container {
+  color: var(--heading);
+  width: 100%;
+
+  > img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+  }
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+
+  strong {
+    margin-top: 3rem;
+    font-size: 2rem;
+    display: block;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    line-height: 3.5rem;
+    color: var(--info);
+
+    section {
+      display: flex;
+      align-items: center;
+      margin-right: 1.5rem;
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.textContent {
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    padding: 3rem 0 1.5rem;
+  }
+
+  section {
+    p {
+      line-height: 1.5rem;
+      text-align: justify;
+      color: var(--info);
+
+      & + p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
