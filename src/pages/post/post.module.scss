@@ -19,6 +19,19 @@
     display: block;
   }
 
+  aside {
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: var(--heading);
+    text-align: center;
+    border-radius: 4px;
+
+    a {
+      font-weight: 600;
+      color: var(--background);
+    }
+  }
+
   .info {
     display: flex;
     align-items: center;
@@ -56,4 +69,28 @@
       }
     }
   }
+}
+
+.postsNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  border-top: 1px solid #d7d7d7;
+
+  span {
+    padding: 2rem 0 3rem;
+    line-height: 1.5rem;
+    max-width: 300px;
+
+    a {
+      color: var(--highlight);
+    }
+  }
+}
+
+.publicationDate {
+  color: var(--info);
+  font-size: 0.9rem;
+  font-style: italic;
 }
